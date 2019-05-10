@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons left>
+            <button ion-button (click)="back()">
+          <span style="color: #000;font-size:1em;font-weight: normal;">取&nbsp;消</span>
+        </button>
+        </ion-buttons>
+        <ion-title text-center><span style="font-weight: lighter;">发文字</span></ion-title>
+        <ion-buttons right>
+            <button ion-button  (click)="send()" id="sen" disabled>
+          <span style="font-size:1em;font-weight: normal;">完&nbsp;成</span>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="area">
+      <ion-textarea  placeholder="分享新鲜事..." [(ngModel)]="words"  (ionBlur)="blurInput()" (ionFocus)="focusInput()"  >
+        </ion-textarea>
+  </div>
+      <div class="img">
+        <img id="simg" src="http://35.194.153.183:8080{{src}}">
+      </div>
+    <ion-list>
+    <ion-grid>
+        <ion-row >
+          <ion-col  col-3 text-center>
+            <label for="file">
+              <ion-icon name="ios-image-outline" style="font-size:30px;"></ion-icon>
+            </label>
+            <input type="file" name="file" id="file" style="display: none;" (change)="upload()">
+          </ion-col>
+            <ion-col  col-3 text-center (click)="takepic()"> <ion-icon name="ios-camera-outline"  style="font-size:40px;"></ion-icon></ion-col>
+            <ion-col col-3 text-center> <ion-icon name="ios-grid-outline" style="font-size:30px;"></ion-icon></ion-col>
+            <ion-col col-3 text-center><ion-icon  name="ios-happy-outline" style="font-size: 30px;"></ion-icon></ion-col>
+        </ion-row>
+    </ion-grid>
+    </ion-list>
+</ion-content>

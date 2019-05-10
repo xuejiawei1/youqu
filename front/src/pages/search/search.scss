@@ -1,0 +1,37 @@
+page-search {
+  ion-header .searchbar .searchbar-input{
+    height:30px;
+    line-height: 30px;
+    font-size:13px;
+    box-shadow: 0px;
+    padding: 6px 28px;
+    border: 0.5px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow:none;
+}
+ion-header .searchbar .searchbar-search-icon{
+  top:5px;
+  left:4px;
+}
+  button{
+    float: right;
+    position: relative;
+    margin-top: -12%;
+    font-weight: lighter;
+  }
+  h2{
+    line-height: -10px !important;
+  }
+  .doc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .content{
+    position: relative;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 1.6rem;
+    }
+}
